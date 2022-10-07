@@ -37,6 +37,7 @@ body {
     grid-template-rows: .5fr 1fr 1fr 1.5fr;
     align-content: start;
 
+
 }
 
 .dashboard-logo {
@@ -59,6 +60,12 @@ body {
     gap: 10px;
     font-size: var(--minor-header-font-size);
     font-weight: var(--minor-header-weight);
+    
+}
+
+.action-links > div,
+.support-links > div {
+    display: flex;
 }
 
 .action-links>div> img, 
@@ -67,6 +74,37 @@ body {
     padding-right: 10px;
     padding-left: 20px;
 }
+.action-links >div >a,
+.support-links >div>a {
+    color: var(--dark-background-text-color);
+    text-decoration: none;
+}
+
+
+
+
+.action-links >div >a:hover,
+.support-links >div>a:hover {
+    background-color: var(--background-color-shadow);
+    color: var(--light-background-text-color);
+    border-radius: 5px;
+    width: 150px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+.action-links >div >a:active,
+.support-links >div>a:active {
+    background-color: var(--background-color-shadow);
+    color: var(--light-background-text-color);
+    border-radius: 5px;
+    width: 150px;
+    transition: 0.05s;
+    scale: 0.95;
+    text-decoration: none;
+}
+
+
+
 
 .support-links {
     display:grid;
@@ -106,6 +144,18 @@ body {
     font-weight: 600;
     justify-self: center;
 }
+
+.user-welcome > button:hover {
+    background-color: var(--background-color-shadow);
+    color: var(--light-background-text-color);
+    border: 3px solid var(--background-color-main)
+}
+.user-welcome > button:active {
+    transition: 0.05s;
+    scale:0.95;
+}
+
+
 .user-welcome {
     display: grid;
     grid-template-columns: .5fr 6fr 1fr 1fr 1fr;
@@ -196,16 +246,30 @@ body {
     border-left: 8px solid var(--background-color-main);
     background-color: var(--background-color-cards);
     box-shadow: var(--card-shadow);
+
     
 }
+.project:hover {
+    border-left: 8px solid #0ea5e9;
+    transition: .25s;
+}
+
 .title {
     font-weight: var(--main-header-weight)
 }
 .project-icons{
     align-self: flex-end;
 }
+.project-icons > a > img:hover {
+    transition: 0.25s;
+    scale: 1.25;
+}
+.project-icons > a > img:active {
+    transition: 0.05s;
+    scale: 0.9;
+}
 
-.project-icons > img {
+.project-icons > a > img {
     height: 20px;
 }
 
