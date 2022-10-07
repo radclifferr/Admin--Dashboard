@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
 body {
     height: 100%;
     margin: 0;
@@ -50,16 +48,6 @@ body {
 .dashboard-logo > img {
     height: 100px;
 }
-
-
-
-
-
-
-
-
-
-
 .dashboard-logo{
     font-size: var(--main-header-font-size);
     font-weight: var(--main-header-weight);
@@ -160,7 +148,7 @@ body {
     background-color: var(--background-color-shadow);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
 
 }
 
@@ -190,7 +178,6 @@ body {
     padding-top: 20px;
     padding-bottom: 10px;
 }
-
 .project-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -201,7 +188,6 @@ body {
     margin-right: 30px;
 
 }
-
 .project {
     display: flex;
     flex-direction: column;
@@ -212,7 +198,9 @@ body {
     box-shadow: var(--card-shadow);
     
 }
-
+.title {
+    font-weight: var(--main-header-weight)
+}
 .project-icons{
     align-self: flex-end;
 }
@@ -249,7 +237,7 @@ body {
     border-radius: var(--card-border-radius);
     background-color: var(--background-color-cards);
     box-shadow: var(--card-shadow);
-    height: 325px;
+    max-height: 350px;
 
     
 }
