@@ -148,6 +148,7 @@ body {
 .search > input {
     border: 2px solid var(--background-color-shadow);
     border-radius: 10px;
+    height: 20px;
     background-color: var(--background-color-shadow);
     max-width: 1000px;
 
@@ -162,11 +163,17 @@ body {
     grid-template-rows: 1fr 5fr;
 
 }
-/* NEW */
+
 .sub-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: .25fr 1fr .25fr 1fr;
+    grid-template-rows: .1fr 1fr .1fr 1fr;
+    padding: 30px;
+}
+
+.header {
+    font-weight: var(--main-header-weight);
+    font-size: var(--minor-header-font-size)
 }
 
 .header-container-projects{
@@ -180,21 +187,29 @@ body {
 .header-container-trending{
     grid-column: 2;
     grid-row: 3;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .project-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
-    gap: 20px;
+    grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
     grid-column: 1;
     grid-row: 2/5;
+    margin-right: 30px;
+
 }
 
 .project {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    padding: 40px;
+    border-radius: var(--card-border-radius);
+    border-left: 8px solid var(--background-color-main);
+    background-color: var(--background-color-cards);
+    box-shadow: var(--card-shadow);
     
 }
 
@@ -210,23 +225,49 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     grid-row: 2;
+    border-radius: var(--card-border-radius);
+    background-color: var(--background-color-cards);
+    box-shadow: var(--card-shadow)
 }
 .announcement-title {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 800;
-
+}
+.announcement-text{
+    font-size: 12px;
+}
+.announcement {
+    padding: 15px;
 }
 
 .trending-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    border-radius: var(--card-border-radius);
+    background-color: var(--background-color-cards);
+    box-shadow: var(--card-shadow);
+    height: 325px;
+
+    
 }
 .trending-user{
     display: flex;
-    align-self: center;
     align-items: center;
+    padding: 15px;
 }
+
 .user-icon-picture {
-    height: 80px;
+    height: 50px;
+    padding-right: 15px;
+}
+
+.trending-user :nth-child(1){
+    font-weight: var(--main-header-weight);
+    font-size: .75rem;
+}
+.trending-user :nth-child(2){
+    font-size: .85rem;
 }
