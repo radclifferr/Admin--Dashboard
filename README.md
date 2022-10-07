@@ -1,7 +1,7 @@
 # Admin Dashboard
-###This project is an example of a admin dashboard using grid and flex displays for CSS
+### This project is an example of a admin dashboard using grid and flex displays for CSS
 
-##Description
+## Description
 A simple admin dashboard design built with HTML and CSS with, 
 *Flexbox
 *Grid
@@ -10,7 +10,7 @@ A simple admin dashboard design built with HTML and CSS with,
 
 
 
-##Demo
-###Live: [Here](https://radclifferr.github.io/Admin-Dashboard/)
+## Demo
+### Live: [Here](https://radclifferr.github.io/Admin-Dashboard/)
 ![Preview](Images/Dashboard-Screenshot.JPG)
 
