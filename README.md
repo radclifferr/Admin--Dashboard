@@ -3,10 +3,10 @@
 
 ## Description
 A simple admin dashboard design built with HTML and CSS with, 
-*Flexbox
-*Grid
-*CSS variables for global styling
-*Pseudo-classes for hover and click transition events
+* Flexbox
+* Grid
+* CSS variables for global styling
+* Pseudo-classes for hover and click transition events
 
 
 
