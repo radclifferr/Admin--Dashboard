@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-* {
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -94,7 +94,7 @@
     grid-template-rows: 1fr 1fr;
     background-color: var(--background-color-cards);
     box-shadow: var(--welcome-bar-shadow);
-    padding-bottom: 10px;
+
 }
 .search{
     display: grid;
@@ -106,8 +106,6 @@
     padding-right: 70px;
 
 }
-
-
 .user-welcome > button {
 
     height: 35px;
@@ -127,7 +125,6 @@
     align-items: center;
     padding-left: 40px;
 }
-
 .user-name {
     display:grid;
     grid-template-rows: 1fr 2.5fr;
@@ -142,15 +139,12 @@
     font-weight: 800;
 
 }
-
 .user-icon-picture {
     height: 65px;
 }
-
 .search> img {
     height: 25px;
 }
-
 .search > input {
     border: 2px solid var(--background-color-shadow);
     border-radius: 10px;
@@ -158,121 +152,81 @@
     max-width: 1000px;
 
 }
-
 .search > div {
     font-weight:600;
-
 }
 .dashboard {
     background-color: var(--background-color-shadow);
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
 
 }
-.project-container {
-    font-weight: var(--minor-header-weight);
-    font-size: var(--minor-header-font-size);
+/* NEW */
+.sub-container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr .15fr;
-    gap: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: .25fr 1fr .25fr 1fr;
 }
-.project-sub-container {
+
+.header-container-projects{
     grid-column: 1;
-    grid-row: 1/3;
-    margin: 20px;
+    grid-row: 1;
 }
-
-
-.projects-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 40px;
-    margin-top: 10px;
+.header-container-announcements{
+    grid-column: 2;
+    grid-row: 1;
 }
-
-
-.projects-box > div {
-    background-color: var(--background-color-cards);
-    border-radius: var(--card-border-radius);
-    border-left: solid 10px var(--background-color-main); 
-}
-.project {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .25fr 1fr .25fr;
-    align-items: center;
-}
-.box-text {
-    font-size: 1rem;
-    font-weight: 500;
-    color:#52525b;
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
-.icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.header-container-trending{
     grid-column: 2;
     grid-row: 3;
 }
-.icons > img {
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 20px;
+    grid-column: 1;
+    grid-row: 2/5;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    
+}
+
+.project-icons{
+    align-self: flex-end;
+}
+
+.project-icons > img {
     height: 20px;
 }
 
-
-.trending-box {
-    background-color: var(--background-color-cards);
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--card-shadow);
-    grid-column: 2/2;
+.announcement-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-row: 2;
 }
-.announcements-box {
-    background-color: var(--background-color-cards);
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--card-shadow);
-    grid-row: 3/3;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+.announcement-title {
+    font-size: 20px;
+    font-weight: 800;
+
 }
 
-.announcement {
-    display: grid;
-    grid-template-rows: 1fr 4fr;
+.trending-container {
+    display: flex;
+    flex-direction: column;
 }
-.announcement-titles {
-    font-size: 16px;
-}
-.announcement-text {
-    font-size: 12px;
-    font-weight: 200;
-    /* border-bottom: 1px solid var(--background-color-main) */
-}
-
-.trending-box {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.trending-user {
-    display:grid;
-    grid-template-columns: 1fr 3fr;
+.trending-user{
+    display: flex;
+    align-self: center;
     align-items: center;
-    align-content: center;
 }
-.trending-name-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    font-size: .75rem;
-
-}
-.trending-project{
-    font-weight:800;
-    color: lightslategray;
-    align-self: start;
-}
-.user-trending-name{
-    align-self: end;
+.user-icon-picture {
+    height: 80px;
 }
